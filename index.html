@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PCBVariation.org | Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">PCBVariation.org</div>
+    <nav class="site-nav">
+      <a class="active" href="index.html">Projects</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-badge">Real hardware. Real mistakes. Real fixes.</div>
+      <h1>Projects I actually built</h1>
+      <p>
+        This is my personal engineering portfolio. I mess with PCB design, embedded
+        firmware, and real prototypes you can hold. I like showing what worked, what
+        didn’t, and why I made the choices I did.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">See the builds</a>
+        <a class="btn ghost" href="about.html">How I work</a>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <article class="project-card">
+        <div class="card-top">
+          <span class="project-index">01</span>
+          <span class="project-status">field tested</span>
+        </div>
+        <h2>Battery Logger Board</h2>
+        <p>
+          I needed a tiny board that could read cell voltage, temperature, and log data
+          on the go. I built the PCB in KiCad, routed the power stuff by hand, and wrote
+          the firmware to sleep most of the time so the battery lasts.
+        </p>
+        <ul class="tags">
+          <li>PCB</li>
+          <li>STM32</li>
+          <li>Low-power</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="card-top">
+          <span class="project-index">02</span>
+          <span class="project-status">clean power</span>
+        </div>
+        <h2>USB-C Sensor Hub</h2>
+        <p>
+          A small board that fans out USB-C power to a bunch of sensors and reads them
+          over I2C. I had to make sure the layout didn’t get noisy, so I split the ground
+          planes and kept the traces short.
+        </p>
+        <ul class="tags">
+          <li>USB-C</li>
+          <li>Signal Integrity</li>
+          <li>Firmware</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="card-top">
+          <span class="project-index">03</span>
+          <span class="project-status">bench tool</span>
+        </div>
+        <h2>Desk Test Fixture</h2>
+        <p>
+          I got tired of plugging in probes, so I made a pogo-pin test fixture for quick
+          checks. It has a simple microcontroller that shows pass/fail and dumps serial
+          logs to my laptop.
+        </p>
+        <ul class="tags">
+          <li>Prototyping</li>
+          <li>Fixture</li>
+          <li>Serial</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="card-top">
+          <span class="project-index">04</span>
+          <span class="project-status">rev b upgrade</span>
+        </div>
+        <h2>Motor Driver Rev B</h2>
+        <p>
+          My first motor driver ran hot, so I rebuilt it with thicker traces, a better
+          gate driver, and some airflow cutouts in the enclosure. It runs cooler and
+          doesn’t freak out at higher current.
+        </p>
+        <ul class="tags">
+          <li>Power</li>
+          <li>PCB Re-spin</li>
+          <li>Testing</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built by a teen who likes soldering more than sleep.</p>
+  </footer>
+</body>
+</html>
