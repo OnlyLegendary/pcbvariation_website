@@ -3,75 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PCBVariation.org | About</title>
+  <title>PCBVariation.org | About PCB Variation</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="logo">PCBVariation.org</div>
     <nav class="site-nav">
-      <a href="index.html">Projects</a>
+      <a href="index.html">Project</a>
       <a class="active" href="about.html">About</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-badge">Built by a teen who likes hardware more than sleep.</div>
-      <h1>About me</h1>
+      <div class="hero-badge">One project, tons of real board data.</div>
+      <h1>About PCB Variation</h1>
       <p>
-        I’m a teen who keeps building hardware because it’s the fastest way to learn.
-        I design PCBs, write firmware, and make prototypes that actually run on my desk.
-        If something fails, I poke at it until I figure out why.
+        PCB Variation is my project about assembly bounty + temporal physical
+        fingerprinting. I want to prove a board is real by how it’s built and how it
+        drifts over time. It’s not a portfolio, it’s one focused experiment that I’m
+        building in public.
       </p>
       <div class="hero-actions">
-        <a class="btn primary" href="index.html">Back to projects</a>
-        <a class="btn ghost" href="mailto:hello@pcbvariation.org">Email me</a>
+        <a class="btn primary" href="index.html">Back to the project</a>
+        <a class="btn ghost" href="mailto:hello@pcbvariation.org">Talk to me</a>
       </div>
     </section>
 
     <section class="about-grid">
       <div>
-        <h2>How I work</h2>
+        <h2>What assembly bounty means</h2>
         <p>
-          I start with the problem, sketch the circuit, then jump into KiCad. I keep my
-          layouts simple and label everything so future-me doesn’t get lost. Once the
-          board shows up, I solder it, flash the code, and test it with a multimeter and
-          a cheap scope.
+          If a board is actually built and tested, it should earn proof. The bounty part
+          means the hardware itself helps verify the assembly so the work can be trusted.
         </p>
       </div>
       <div>
-        <h2>Why this site exists</h2>
+        <h2>Temporal physical fingerprinting</h2>
         <p>
-          I wanted a place to document what I’m building, not just post pretty photos.
-          I’ll share the weird issues, the quick fixes, and what I learned so other
-          people can steal the good ideas.
+          I measure tiny timing and analog shifts that happen as a board warms up, cools
+          down, and ages. That time-based drift is the fingerprint I’m chasing.
         </p>
       </div>
       <div>
-        <h2>What I’m into</h2>
+        <h2>Why I’m doing this</h2>
         <p>
-          Power electronics, sensors, tiny boards that do big stuff, and clean firmware
-          that doesn’t waste cycles. If it has wires and a microcontroller, I’m probably
-          interested.
+          Counterfeits and fake builds are a real thing. I want a cheap, repeatable way
+          to prove a board is legit using physics instead of just a sticker.
         </p>
       </div>
     </section>
 
     <section class="timeline">
-      <h2>My build loop</h2>
+      <h2>How I’m building it</h2>
       <ol>
-        <li><strong>Sketch it.</strong> Figure out the job, then draw the circuit and block diagram.</li>
-        <li><strong>Route it.</strong> Keep traces short, power clean, and labels obvious.</li>
-        <li><strong>Solder it.</strong> Build it fast, then stare at it until it works.</li>
-        <li><strong>Break it.</strong> Push it on purpose so I know the limits.</li>
-        <li><strong>Fix it.</strong> Rev the board, clean the firmware, repeat.</li>
+        <li><strong>Plan the fingerprints.</strong> Pick signals that drift in a measurable way.</li>
+        <li><strong>Build the boards.</strong> Same design, different real-world quirks.</li>
+        <li><strong>Capture the data.</strong> Log time-series traces, not just one snapshot.</li>
+        <li><strong>Analyze the drift.</strong> Find the patterns that stay unique.</li>
+        <li><strong>Prove the build.</strong> Tie it all together in a bounty-style proof.</li>
       </ol>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Yeah, I made this site myself.</p>
+    <p>Still in progress, still soldering.</p>
   </footer>
 </body>
 </html>
